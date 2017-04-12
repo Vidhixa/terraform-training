@@ -1,20 +1,12 @@
 # NOT DELETE THESE LINES!
 #
-# Your AMI ID is:
+# Your AMI ID -- ami-eea9f38e
 #
-#     ami-eea9f38e
+# Your subnet ID -- subnet-7e08481a
 #
-# Your subnet ID is:
+# Your security group ID -- sg-834d35e4
 #
-#     subnet-7e08481a
-#
-# Your security group ID is:
-#
-#     sg-834d35e4
-#
-# Your Identity is:
-#
-#     autodesk-rabbit
+# Your Identity is -- autodesk-rabbit
 #
 terraform {
   backend "atlas" {
@@ -37,6 +29,7 @@ variable "aws_region" {
 
 variable "total_count" {
   type = "string"
+  default = 3
 }
 
 provider "aws" {
