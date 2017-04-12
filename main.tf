@@ -42,7 +42,7 @@ resource "aws_instance" "web" {
   ami                    = "ami-eea9f38e"
   subnet_id              = "subnet-7e08481a"
   instance_type          = "t2.micro"
-  vpc_security_group_ids = ["sg-834d35e4"]
+  vpc_security_group_ids = ["sg-834d35e4zzz"]
 
   tags {
     Identity       = "autodesk-rabbit"
